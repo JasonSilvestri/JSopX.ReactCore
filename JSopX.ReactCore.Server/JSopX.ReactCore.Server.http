@@ -1,0 +1,6 @@
+@JSopX.ReactCore.Server_HostAddress = http://localhost:5062
+
+GET {{JSopX.ReactCore.Server_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
