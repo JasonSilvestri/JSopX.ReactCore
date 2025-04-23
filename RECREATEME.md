@@ -1,85 +1,158 @@
-﻿# <img src="https://github.com/JasonSilvestri/JSopX.BridgeTooFar/blob/master/JSopX.BridgeTooFar/doc-assets/jsopx-angular-core-logo.svg" style="width: 28px; height: auto; padding-right:12px;!important;"> JSopX™ Angular Core Project
+﻿# <img src="https://github.com/JasonSilvestri/JSopX.BridgeTooFar/blob/master/JSopX.BridgeTooFar/doc-assets/jsopx-react-core-logo.svg" style="width: 28px; height: auto; padding-right:12px;!important;"> JSopX™ React Core Project
 
-The **JSopX™ Angular Core Project**, _code named_, `JSopX.AngularCore` is a totally **FREE**, open-source, demonstration project showcasing how to build a web application using Angular and ASP.NET Core Web API. 
+The **JSopX™ React Core Project** is a **FREE**, open-source demonstration project built in Visual Studio, _code named_, `JSopX.ReactCore`. It showcases the transformation of an existing React and ASP.NET Core application—complete with its own assets, Web APIs, and standards—into a scalable solution for optimal enterprise application migration.
 
 ---
 
-## **Use Latest Variant:**
+## **Start From Scratch Variant:**
 
 > [!TIP]
-> You are currently viewing the **"_Use Latest_" _Variant_** of the **JSopX™ Angular Core Project**. 
+> You are currently viewing the **"_Start From Scratch_" _Variant_** of the **JSopX™ React Core Project**. 
 > 
 > For more details, see [Getting Started](#getting-started) _below_.
 
 ---
 
+
 ```bash
-# For The Cool Kids: Clone JSopX.AngularCore Git Repository
-$ git clone https://github.com/JasonSilvestri/JSopX.AngularCore.git
+# For The Cool Kids: Clone JSopX.ReactCore Git Repository
+$ git clone https://github.com/JasonSilvestri/JSopX.ReactCore.git
 ```
 
 ---
 
-[`Home`](https://github.com/JasonSilvestri/JSopX.BridgeTooFar/tree/master/JSopX.BridgeTooFar/DocsOpenX/OpenProjects/jsopx.AngularCore/README.md) » [`Introduction`](https://github.com/JasonSilvestri/JSopX.BridgeTooFar/tree/master/JSopX.BridgeTooFar/DocsOpenX/Introduction/) » [`Projects`](https://github.com/JasonSilvestri/JSopX.BridgeTooFar/tree/master/JSopX.BridgeTooFar/DocsOpenX/OpenProjects/) · · **`Use Latest`** · [`By-Phase`](https://github.com/JasonSilvestri/JSopX.BridgeTooFar/tree/master/JSopX.BridgeTooFar/DocsOpenX/OpenProjects/jsopx.AngularCore/p1/v1/README.md) · [`From Scratch`](https://github.com/JasonSilvestri/JSopX.BridgeTooFar/tree/master/JSopX.BridgeTooFar/DocsOpenX/OpenProjects/jsopx.AngularCore/p1/v1/RECREATEME.md) · · [`« Previous`](https://github.com/JasonSilvestri/JSopX.BridgeTooFar/tree/master/JSopX.BridgeTooFar/DocsOpenX/OpenProjects/jsopx.AspNetCore/) [`Next »`](https://github.com/JasonSilvestri/JSopX.BridgeTooFar/tree/master/JSopX.BridgeTooFar/DocsOpenX/OpenProjects/jsopx.ReactCore/)
+[`Home`](https://github.com/JasonSilvestri/JSopX.BridgeTooFar/tree/master/JSopX.BridgeTooFar/DocsOpenX/OpenProjects/jsopx.ReactCore/p1/v1/README.md) » [`Introduction`](https://github.com/JasonSilvestri/JSopX.BridgeTooFar/tree/master/JSopX.BridgeTooFar/DocsOpenX/Introduction/) » [`Projects`](https://github.com/JasonSilvestri/JSopX.BridgeTooFar/tree/master/JSopX.BridgeTooFar/DocsOpenX/OpenProjects/jsopx.ReactCore/p1/v1/OpenProjects/) · · [`Use Latest`](https://github.com/JasonSilvestri/JSopX.BridgeTooFar/tree/master/JSopX.BridgeTooFar/DocsOpenX/OpenProjects/jsopx.ReactCore/README.md) · [`By-Phase`](https://github.com/JasonSilvestri/JSopX.BridgeTooFar/tree/master/JSopX.BridgeTooFar/DocsOpenX/OpenProjects/jsopx.ReactCore/p1/v1/README.md) · **`From Scratch`** · · [`« Previous`](https://github.com/JasonSilvestri/JSopX.BridgeTooFar/tree/master/JSopX.BridgeTooFar/DocsOpenX/OpenProjects/jsopx.AngularCore/p1/v1/RECREATEME.md) [`Next »`](https://github.com/JasonSilvestri/JSopX.BridgeTooFar/tree/master/JSopX.BridgeTooFar/DocsOpenX/OpenProjects/jsopx.VueCore/p1/v1/RECREATEME.md)
 
 ---
 
-## Table of Contents  
+## Table of Contents
 
  - [Overview](#overview)
   - [Prerequisites](#prerequisites)
-  - [Getting Started](#getting-started)
-      - [Step 1: Clone the Repository](#step-1-clone-the-repository)
-      - [Step 2: Open the Solution](#step-2-open-the-solution)
-      - [Step 3: Configure the Project](#step-3-configure-the-project)
-      - [Step 4: Build and Run](#step-4-be-sure-to-build-and-run)
-      - [Step 5: Project File Structure](#step-5-project-file-structure)
-      - [Step 6: Project References & Dependencies](#step-6-jsopx-project-references--dependencies)
-      - [Step 7: Usage](#step-7-usage)
-      - [Step 8: Extended Usage](#step-8-extended-usage)
+  - [Corequisites](#corequisites)
+  - [Business Concerns Addressed](#business-concerns-addressed)
+      - [Step 1: Recreate Using React and ASP.NET Core Template](#step-1-recreate-jsopxreactcore-using-react--aspnet-core-template)
+      - [Step 2: Extend Weather Data](#step-2-extend-weather-data)
+      - [Step 3: Integrate OIDC](#step-3-integrate-oidc)
+      - [Step 4: Decouple from Built-In API](#step-4-decouple-from-built-in-api)
+      - [Step 5: Standardize with RCLs and Libraries](#step-5-standardize-with-rcls-and-libraries)
   - [Next Steps](#next-steps)
+  
+---
+
+## Overview
+
+The **JSopX™ React Core Project** is a **FREE**, open-source demonstration project built in Visual Studio, _code named_, `JSopX.ReactCore`. It showcases the transformation of an existing React-based client-side project that demonstrates the flexibility and component-driven approach of React, working in harmony with ASP.NET Core services—complete with its own assets, Web APIs, and standards—into a scalable solution for optimal enterprise application migration.
+
+By aligning varied frameworks—ranging from [ASP.NET Core](https://github.com/JasonSilvestri/JSopX.BridgeTooFar/tree/master/JSopX.BridgeTooFar/DocsOpenX/OpenProjects/jsopx.AspNetCore/README.md) to [Angular](https://github.com/JasonSilvestri/JSopX.BridgeTooFar/tree/master/JSopX.BridgeTooFar/DocsOpenX/OpenProjects/jsopx.AngularCore/README.md), [Vue](https://github.com/JasonSilvestri/JSopX.BridgeTooFar/tree/master/JSopX.BridgeTooFar/DocsOpenX/OpenProjects/jsopx.VueCore/README.md), [React](https://github.com/JasonSilvestri/JSopX.BridgeTooFar/tree/master/JSopX.BridgeTooFar/DocsOpenX/OpenProjects/jsopx.ReactCore/README.md), [Blazor](https://github.com/JasonSilvestri/JSopX.BridgeTooFar/tree/master/JSopX.BridgeTooFar/DocsOpenX/OpenProjects/jsopx.BlazorServerCore/README.md), [MAUI](https://github.com/JasonSilvestri/JSopX.BridgeTooFar/tree/master/JSopX.BridgeTooFar/DocsOpenX/OpenProjects/jsopx.MauiHybridNetCore/README.md) and more, all using the same [Web API](https://github.com/JasonSilvestri/JSopX.BridgeTooFar/tree/master/JSopX.BridgeTooFar/DocsOpenX/OpenProjects/jsopx.WebAPI/README.md), [assets](https://github.com/JasonSilvestri/JSopX.BridgeTooFar/tree/master/JSopX.BridgeTooFar/DocsOpenX/OpenProjects/jsopx.RCLxProper/README.md), [documentation](https://github.com/JasonSilvestri/JSopX.BridgeTooFar/tree/master/JSopX.BridgeTooFar/DocsOpenX/OpenProjects/jsopx.BridgeTooFar/README.md), and [standards](https://github.com/JasonSilvestri/JSopX.BridgeTooFar/tree/master/JSopX.BridgeTooFar/DocsOpenX/Introduction/JSopxDevelopmentStandards.md)—these projects create a consistent development landscape where code can be shared, extended, and integrated seamlessly, bridging-of-the-critical-gap, between front-end dynamism and back-end security. 
+
+The result is an environment that transforms a patchwork of independent solutions into a cohesive enterprise ecosystem, making collaboration smoother and long-term maintenance more manageable. As you delve deeper, you’ll discover how each project type fits into this grand tapestry, ensuring uniform standards while preserving the flexibility needed to evolve and adapt.
 
 ---
 
 ## Current Phase
 
-> [!NOTE]
+> [!CAUTION]
 >
 >**Phases 1**: This document is currently aligned with [Phase 1: Minimum Viable Product (MVP)](https://github.com/JasonSilvestri/JSopX.BridgeTooFar/tree/master/JSopX.BridgeTooFar/DocsOpenX/Phases/Phase-1.md) Business Requirements. 
 > 
 
 ---
 
-## Overview
+## **Prerequisites**
 
-The **JSopX™ Angular Core Project**, _code named_, `JSopX.AngularCore` is a totally **FREE**, open-source, demonstration project showcasing how to build a web application using Angular and ASP.NET Core Web API. As a whole, the project highlights the integration of _Angular_ for the client-side with _ASP.NET Core_ for the server-side, providing a comprehensive example of a modern web application stack. Conversely, the project has a much higher calling.
+Be sure each technology is installed, with proper versioning, if your goal is to continue exploring and/or installing just the `JSopX.ReactCore` Project.
 
-
-We initially create the project to simulate an ["Existing" Client-side Apps Example](https://github.com/JasonSilvestri/JSopX.BridgeTooFar/tree/master/JSopX.BridgeTooFar/DocsOpenX/Introduction/JSopxProjectsFamilies.md#5-client-side-existing-apps-examples) Weather Forecast Angular application, with its own Web API and existing standards, to conform to the initial [business requirements](https://github.com/JasonSilvestri/JSopX.BridgeTooFar/tree/master/JSopX.BridgeTooFar/DocsOpenX/Introduction/JSopxEnterpriseBusinessRequirements.md) set forth by the fictional stakeholders.
-
-As the project evolves through each [Lifecycle Phase](https://github.com/JasonSilvestri/JSopX.BridgeTooFar/tree/master/JSopX.BridgeTooFar/DocsOpenX/Phases/ReadMe.md), we extend the application by creating new user interfaces, the integratation of standardized assets and resources commonly used across projects that comply to the stakeholder's brand standards we are tasked with creating, perform typical increase of security and documentation, while anticipating we'll face a near-future, seamless migration request of the project into our [JSopX.OpenProjectX](https://github.com/JasonSilvestri/JSopX.BridgeTooFar/tree/master/JSopX.BridgeTooFar/DocsOpenX/OpenProjects/jsopx.OpenProjectX/) Enterprise Application.
-
-The Jason Silvestri Open Project EXperiences (JSopX™) Visual Studio Projects collectively form the backbone of the entire suite, each project serving a distinct yet complementary role. 
-
-By aligning varied frameworks—ranging from [ASP.NET Core](https://github.com/JasonSilvestri/JSopX.BridgeTooFar/tree/master/JSopX.BridgeTooFar/DocsOpenX/OpenProjects/jsopx.AspNetCore/README.md) to [Angular](https://github.com/JasonSilvestri/JSopX.BridgeTooFar/tree/master/JSopX.BridgeTooFar/DocsOpenX/OpenProjects/jsopx.AngularCore/README.md), [Vue](https://github.com/JasonSilvestri/JSopX.BridgeTooFar/tree/master/JSopX.BridgeTooFar/DocsOpenX/OpenProjects/jsopx.VueCore/README.md), [React](https://github.com/JasonSilvestri/JSopX.BridgeTooFar/tree/master/JSopX.BridgeTooFar/DocsOpenX/OpenProjects/jsopx.ReactCore/README.md), [Blazor](https://github.com/JasonSilvestri/JSopX.BridgeTooFar/tree/master/JSopX.BridgeTooFar/DocsOpenX/OpenProjects/jsopx.BlazorServerCore/README.md), [MAUI](https://github.com/JasonSilvestri/JSopX.BridgeTooFar/tree/master/JSopX.BridgeTooFar/DocsOpenX/OpenProjects/jsopx.MauiHybridNetCore/README.md) and more, all using the same [Web API](https://github.com/JasonSilvestri/JSopX.BridgeTooFar/tree/master/JSopX.BridgeTooFar/DocsOpenX/OpenProjects/jsopx.WebAPI/README.md), [assets](https://github.com/JasonSilvestri/JSopX.BridgeTooFar/tree/master/JSopX.BridgeTooFar/DocsOpenX/OpenProjects/jsopx.RCLxProper/README.md), [documentation](https://github.com/JasonSilvestri/JSopX.BridgeTooFar/tree/master/JSopX.BridgeTooFar/DocsOpenX/OpenProjects/jsopx.BridgeTooFar/README.md), and [standards](https://github.com/JasonSilvestri/JSopX.BridgeTooFar/tree/master/JSopX.BridgeTooFar/DocsOpenX/Introduction/JSopxDisciplinesRequiredForEnterpriseDevelopment.md)—these projects create a consistent development landscape where code can be shared, extended, and integrated seamlessly. 
-The result is an environment that transforms a patchwork of independent solutions into a cohesive enterprise ecosystem, making collaboration smoother and long-term maintenance more manageable. As you delve deeper, you’ll discover how each project type fits into this grand tapestry, ensuring uniform standards while preserving the flexibility needed to evolve and adapt.
-
-
-
-
+- [Visual Studio (v 17.13.6)](https://github.com/JasonSilvestri/JSopX.BridgeTooFar/tree/master/JSopX.BridgeTooFar/DocsOpenX/OpenProjects/jsopx.ReactCore/p1/v1/Technologies/#visual-studio)
+- [.NET Framework (v 9.0.1)](https://github.com/JasonSilvestri/JSopX.BridgeTooFar/tree/master/JSopX.BridgeTooFar/DocsOpenX/OpenProjects/jsopx.ReactCore/p1/v1/Technologies/#net-framework)
+- [ASP.NET Core (v 9.0.1)](https://github.com/JasonSilvestri/JSopX.BridgeTooFar/tree/master/JSopX.BridgeTooFar/DocsOpenX/OpenProjects/jsopx.ReactCore/p1/v1/Technologies/#aspnet-core)
+- [Node.js (v 20.14.0)](https://github.com/JasonSilvestri/JSopX.BridgeTooFar/tree/master/JSopX.BridgeTooFar/DocsOpenX/OpenProjects/jsopx.ReactCore/p1/v1/Technologies/#node)
+- [npm (v 10.8.1)](https://github.com/JasonSilvestri/JSopX.BridgeTooFar/tree/master/JSopX.BridgeTooFar/DocsOpenX/OpenProjects/jsopx.ReactCore/p1/v1/Technologies/#npm)
+- [React (v 18.2.0)](https://github.com/JasonSilvestri/JSopX.BridgeTooFar/tree/master/JSopX.BridgeTooFar/DocsOpenX/OpenProjects/jsopx.ReactCore/p1/v1/Technologies#react)
 
 ---
 
-## **Prerequisites**
+## Corequisites
 
-Be sure each technology is installed, with proper versioning, if your goal is to continue exploring and/or installing just the `JSopX.AngularCore` Project.
+There are a few resourcees here that strongly align with this content. They should be strictly followed as you go. 
 
-- [Visual Studio (v 17.13.5)](https://github.com/JasonSilvestri/JSopX.BridgeTooFar/tree/master/JSopX.BridgeTooFar/DocsOpenX/Technologies/#visual-studio)
-- [.NET Framework (v 9.0.1)](https://github.com/JasonSilvestri/JSopX.BridgeTooFar/tree/master/JSopX.BridgeTooFar/DocsOpenX/Technologies/#net-framework)
-- [ASP.NET Core (v 9.0.1)](https://github.com/JasonSilvestri/JSopX.BridgeTooFar/tree/master/JSopX.BridgeTooFar/DocsOpenX/Technologies/#aspnet-core)
-- [Node.js (v 20.14.0)](https://github.com/JasonSilvestri/JSopX.BridgeTooFar/tree/master/JSopX.BridgeTooFar/DocsOpenX/Technologies/#node)
-- [npm (v 10.8.1)](https://github.com/JasonSilvestri/JSopX.BridgeTooFar/tree/master/JSopX.BridgeTooFar/DocsOpenX/Technologies/#npm)
-- [Angular CLI (v 18.0.3)](https://github.com/JasonSilvestri/JSopX.BridgeTooFar/tree/master/JSopX.BridgeTooFar/DocsOpenX/Technologies/#angular-cli)
+- [Development Standards](https://github.com/JasonSilvestri/JSopX.BridgeTooFar/tree/master/JSopX.BridgeTooFar/DocsOpenX/Introduction/JSopxDevelopmentStandards.md)
+- [Business Requirements](https://github.com/JasonSilvestri/JSopX.BridgeTooFar/tree/master/JSopX.BridgeTooFar/DocsOpenX/Introduction/JSopxEnterpriseBusinessRequirements.md)
+
+---
+
+## Business Concerns Addressed
+
+The **JSopX™ React Core Project** addresses **several** high-level **business concerns**, not only shown through design patterns and best practices within its own JSopX™ Project ecosystem, but ultimately as it evolves into a valuable project component of the Jason Silvestri Open Project EXperiences (JSopX™) Enterprise Application too. 
+
+[`Back to Top`](#table-of-contents) · · [`Next »`](#1-simulating-an-existing-project)
+
+---
+
+## **1. Simulating an Existing Project**:
+
+We initially create the **JSopX™ React Core Project** to simulate an ["Existing" Server-side Apps Example](https://github.com/JasonSilvestri/JSopX.BridgeTooFar/tree/master/JSopX.BridgeTooFar/DocsOpenX/Introduction/JSopxProjectsFamilies.md#6-server-side-existing-apps-examples) Weather Forecast React Core application, with its own Web API and existing standards, to conform to the initial business requirements set forth by the fictional stakeholders.
+
+![Jason Silvestri Open Project EXperiences (JSopX™) 1. Simulating an Existing Project](https://github.com/JasonSilvestri/JSopX.BridgeTooFar/blob/master/JSopX.BridgeTooFar/doc-assets/for-docs/jsopx-react-core/in-markdown/react-splash-simulate-container-markdown-step-1.png)
+
+[`Back to Top`](#table-of-contents) · · [`« Previous`](#business-concerns-addressed) [`Next »`](#2-create-our-development-standards)
+
+---
+
+## **2. Create Our Development Standards**: 
+
+JSopX™ Enterprise application development isn't just about writing code—it's about creating scalable, maintainable, and secure solutions that stand the test of time. This takes a series of disciplines that provide the framework for sustainable success, ensuring every project delivers efficiency, performance, and an exceptional developer experience.
+
+> [!WARNING]
+>
+>The **biggest mistake** _businesses_ and/or their _developers_ make is not following some form of development standards.
+> 
+
+![Jason Silvestri Open Project EXperiences (JSopX™) 2. Create Our Development Standards](https://github.com/JasonSilvestri/JSopX.BridgeTooFar/blob/master/JSopX.BridgeTooFar/doc-assets/for-docs/jsopx-react-core/in-markdown/react-splash-simulate-container-markdown-step-2.png)
+
+[`Back to Top`](#table-of-contents) · · [`« Previous`](#1-simulating-an-existing-project) [`Next »`](#3-multi-platform-creative-standards)
+
+---
+
+## **3. Multi-Platform Creative Standards**: 
+
+A visually inconsistent application creates confusion. Every JSopX™ project must maintain standardized UI/UX elements. We quickly design and customize multi-platform, web, desktop & native mobile applications, using Bootstrap v 5.3, which we then extend as we go by creating RCLs (_Razor Class Libraries_). 
+
+![Jason Silvestri Open Project EXperiences (JSopX™) 3. Multi-Platform Creative Standards](https://github.com/JasonSilvestri/JSopX.BridgeTooFar/blob/master/JSopX.BridgeTooFar/doc-assets/for-docs/jsopx-react-core/in-markdown/react-splash-simulate-container-markdown-step-3.png)
+
+[`Back to Top`](#table-of-contents) · · [`« Previous`](#2-create-our-development-standards) [`Next »`](#4-using-object-oriented-programming)
+
+---
+
+## **4. Using Object-Oriented Programming**:
+
+Enterprise applications must be **modular**, **reusable**, and **scalable** using **Object-Oriented Programming (OOP)**. 
+
+We create Classes, RCLs, Web APIs, and other Resource Libraries, sharing resources across the JSopX™ ecosystem seamlessly. More rewarding, because we put the work in up front with developing & following standards, developers get to work on cooler things they are more passionate about too, like _Feature Highlights_.
+
+![Jason Silvestri Open Project EXperiences (JSopX™) 4. Using Object-Oriented Programming](https://github.com/JasonSilvestri/JSopX.BridgeTooFar/blob/master/JSopX.BridgeTooFar/doc-assets/for-docs/jsopx-react-core/in-markdown/react-splash-simulate-container-markdown-step-4.png)
+
+[`Back to Top`](#table-of-contents) · · [`« Previous`](#3-multi-platform-creative-standards) [`Next »`](#5-we-get-to-extend-existing-project)
+
+---
+
+## **5. We Get to Extend Existing Project**:
+
+As the project evolves through each Lifecycle Phase, we extend the application by creating new user interfaces, such as dashboards, logins, registration, in addition to being able to apply the standardized assets and resources we took the time to develop, implement security and writing documentation a well oiled machine and team relies on, and more!
+
+![Jason Silvestri Open Project EXperiences (JSopX™) 5. We Get to Extend Existing Project](https://github.com/JasonSilvestri/JSopX.BridgeTooFar/blob/master/JSopX.BridgeTooFar/doc-assets/for-docs/jsopx-react-core/in-markdown/react-splash-simulate-container-markdown-step-5.png)
+
+[`Back to Top`](#table-of-contents) · · [`« Previous`](#4-using-object-oriented-programming) [`Next »`](#6-we-become-a-functioning-project-of-the-jsopx-enterprise-solution)
+
+---
+
+## **6. We Become A Functioning Project of the JSopX™ Enterprise Solution**:
+
+The seamless integration into an enterprise-level application, adopting standardized Web API access, design patterns, and shared resources across the ecosystem.
+
+![Jason Silvestri Open Project EXperiences (JSopX™) 6. We Become A Functioning Project of the JSopX™ Enterprise Solution](https://github.com/JasonSilvestri/JSopX.BridgeTooFar/blob/master/JSopX.BridgeTooFar/doc-assets/for-docs/jsopx-react-core/in-markdown/react-splash-simulate-container-markdown-step-6.png)
+
+[`Back to Top`](#table-of-contents) · · [`« Previous`](#5-we-get-to-extend-existing-project) [`Next »`](#getting-started)
 
 ---
 
@@ -89,393 +162,346 @@ Carefully _choose_ the variant approach below that fits your current objective:
 
 ---
 
-### 1. **Continue Installing `JSopX.`AngularCore**:
+### 1. **Continue Creating `JSopX.ReactCore` From Scratch**:
 
-- **[Continue](#step-1-clone-the-repository)** → **Continue** as **you were**, exploring and/or installing the `JSopX.AngularCore` _Using Latest_ Variant.  
+- **[Continue](#step-1-recreate-jsopxreactcore-using-react--aspnet-core-template)** → **Continue** as **you were**, **creating projects** from scratch, step-by-step, using the `JSopX.ReactCore` _From Scratch_ Variant.   
 
 ---
 
 ### 2. **Use Different Variant**:
 
-- **[Browse By-Phase](https://github.com/JasonSilvestri/JSopX.BridgeTooFar/tree/master/JSopX.BridgeTooFar/DocsOpenX/OpenProjects/jsopx.AngularCore/p1/v1/README.md)** → **Browse** **previous versions** of the application by **phases** using the `JSopX.AngularCore` _By-Phase_ Variant.   
-- **[Start From Scratch](https://github.com/JasonSilvestri/JSopX.BridgeTooFar/tree/master/JSopX.BridgeTooFar/DocsOpenX/OpenProjects/jsopx.AngularCore/p1/v1/RECREATEME.md)** → **Create project** from scratch, step-by-step, using the `JSopX.AngularCore` _From Scratch_ Variant.
-- **[Get All Projects](https://github.com/JasonSilvestri/JSopX.BridgeTooFar/tree/master/JSopX.BridgeTooFar/DocsOpenX/OpenProjects/jsopx.OpenProjectX/README.md)** → **Get all projects** instead, using the `JSopX.OpenProjectX` Enterprise Application.
+- [Install Using Latest](https://github.com/JasonSilvestri/JSopX.BridgeTooFar/tree/master/JSopX.BridgeTooFar/DocsOpenX/OpenProjects/jsopx.ReactCore/README.md): **Install** or **explore** the latest version of **this project**, using the `JSopX.ReactCore` _Using Latest_ Variant.  
+- [Browse By-Phase](https://github.com/JasonSilvestri/JSopX.BridgeTooFar/tree/master/JSopX.BridgeTooFar/DocsOpenX/OpenProjects/jsopx.ReactCore/p1/v1/README.md): **Browse** **previous versions** of the application by **phases** using the `JSopX.ReactCore` _By-Phase_ Variant.   
+- [Get All Projects](https://github.com/JasonSilvestri/JSopX.BridgeTooFar/tree/master/JSopX.BridgeTooFar/DocsOpenX/OpenProjects/jsopx.OpenProjectX/README.md): **Get all projects** instead, using the `JSopX.OpenProjectX` Enterprise Application.
 
 ---
 
-## **Step 1: Clone the Repository**
-
-_Clone_ the `JSopX.AngularCore` GitHub Repository if you plan to explore it independently from the rest of the projects.
-
-Choose the approach below that fits your environment:  
-
-- **[Bash](#step-11-using-bash)** → Ideal for **Linux, macOS, and Windows (WSL/Git Bash)** users.  
-- **[PowerShell](#step-12-using-powershell)** → Best for **Windows** users.  
-- **[Node.js](#step-13-using-nodejs-or-npm-degit)** → A lightweight option for developers using **JavaScript-based workflows**.  
-
----
-
-### **Step 1.1: Using `Bash`:**
- 
-```bash
-
- # Using Bash: Clone JSopX.AngularCore Git Repository
-
- # 1. Navigate to the desired local directory where you plan to clone the repository
- cd path\to\local\repo\JasonSilvestri\JSopX.AngularCore
-
- # 2. Clone JSopX.AngularCore Git Repository       
- git clone https://github.com/JasonSilvestri/JSopX.AngularCore.git
-    
-```
-
-[`Back to Top`](#table-of-contents)
-
----
-
-### **Step: 1.2: Using `Powershell`:**
-
-```powershell
-
- # Using PowerShell: Clone JSopX.AngularCore Git Repository
-
- # 1. Navigate to the desired local directory where you plan to clone the repository
- cd path\to\local\repo\JasonSilvestri\JSopX.AngularCore
-
- # 2. Clone JSopX.AngularCore Git Repository       
- git clone https://github.com/JasonSilvestri/JSopX.AngularCore.git
-    
-```
-
-[`Back to Top`](#table-of-contents)
-
----
-
-### **Step: 1.3: Using `Node.js` or `npm` (degit):**
- 
-```shell
-
- # Using Node.js / npm : Clone JSopX.AngularCore Git Repository
- # 1. Navigate to the desired local directory where you plan to clone the repository
- cd path\to\local\repo\JasonSilvestri\JSopX.AngularCore
-    
- # 2. Using npx degit to clone without .git history
- npx degit https://github.com/JasonSilvestri/JSopX.AngularCore
-
-```
-
-[`Back to Top`](#table-of-contents)
-
----
-
-## **Step 2: Open the Solution**
-
-Working with the `JSopX.AngularCore` Project in Visual Studio is simple enough.
-
-1. Launch **[Visual Studio (v 17.13.5)](https://github.com/JasonSilvestri/JSopX.BridgeTooFar/tree/master/JSopX.BridgeTooFar/DocsOpenX/Technologies/#visual-studio)**.
-2. Open the solution file: `JSopX.AngularCore.sln`.
-
-[`Back to Top`](#table-of-contents)
-
----
-
-## **Step 3: Configure the Project**
-
-> [!TIP]
->
-> Latest versions of [Visual Studio](https://github.com/JasonSilvestri/JSopX.BridgeTooFar/tree/master/JSopX.BridgeTooFar/DocsOpenX/Technologies/#visual-studio) performs this step regularly, dropping and restoring project dependencies, nuget packages and other resources between builds automatically (*by design*). Still, it is good practice to at least be aware of the commands outlined in this step.
-> 
-
----
-
-### **Step: 3.1: Ensure Dependencies Are Restored:**
-
-Ensure `JSopX.AngularCore` Project dependencies are restored:
-
-   ```bash
-   npm install
-   ```
-
-
-[`Back to Top`](#table-of-contents)
-
----
-
-### **Step: 3.2: Verify Nuget Packages:**
-
-Verify that all NuGet packages are up to date:
-
-   ```bash
-   dotnet restore
-   ```
-   
-[`Back to Top`](#table-of-contents)
-
----
-
-## **Step 4: Be Sure to Build and Run**
-
-Building and Running the `JSopX.AngularCore` Project in Visual Studio is also another simple task.
-
-### **Step: 4.1: Build and Run**:
-
-1. Build the solution in [Visual Studio](https://github.com/JasonSilvestri/JSopX.BridgeTooFar/tree/master/JSopX.BridgeTooFar/DocsOpenX/https://github.com/JasonSilvestri/JSopX.BridgeTooFar/tree/master/JSopX.BridgeTooFar/DocsOpenX/OpenProjects/jsopx.AngularCore/p1/v1/Technologies/#visual-studio).
-2. Run the project:
-   - Use the **IIS Express** profile for local development.
-
----
-
-### **Step: 4.2: And Now Your Done**:
-
-Assuming the `JSopX.AngularCore` Project is running as expected, **you are now done** with the **installation** and **execution** of the project!
-
-1. **Skip Remaining Steps**: 
-   - Technically, you could skip to the [Next Steps](#next-steps) section if you are on a project-by-project installation mission.
-2. **Conclude Remaining Steps**:
-   - **Me personally?** I would continue on to the remaining steps _below_, starting at **[Step 5: Project Structure](#step-5-project-file-structure)**. There is just very useful information related to the project that I would find helpful.
-
-[`Back to Top`](#table-of-contents)
-
----
-
-
-## **Step 5: Project File Structure**
-
-The `JSopX.AngularCore` Project in particular, contains several files and directories, all with their own functionality & purpose for existing. 
-
-For brevity, samples will not have the complete file structure you get when installing, but there are some core files and directories that have special consideration you should get to know. 
-
----
-
-### **Step: 5.1: Structured Project & Solution Considerations**:
-
-All `JSopX™ projects` follow a consistent directory structure. 
-
-1. The `JSopX.AngularCore` Project naming conventions include capital casing for `.Server` directories and lowercase for `.client` directories.
-2. I create a [Visual Studio](https://github.com/JasonSilvestri/JSopX.BridgeTooFar/tree/master/JSopX.BridgeTooFar/DocsOpenX/Technologies/#visual-studio) Solution Folder to house the primary `.sln` solution file.
-3. I create a **Client-Side** Project Folder for `.esproj` project files, and related files
-4. I create a similar **Server-Side** Project Folder for `.csproj`, and related files.
-
-A common, plain-text file folder structure of the `JSopX.AngularCore` Solution and Projects should look something like what follows:
-
-```plaintext
-# JSopX™ Angular Core Solution and Projects
-
-JSopX.AngularCore/                        # Root JSopX.AngularCore Visual Studio Solution folder.
-├── JSopX.AngularCore.sln                 # Visual Studio solution file for Angular Core.
-├── PathConfig.targets                    # Centralized MSBuild target configuration for project references.
-├── jsopx.angularcore.client/             # Angular client-side application folder.
-│   ├── jsopx.angularcore.client.esproj   # Angular CLI Visual Studio Client Project configuration file.
-├── JSopX.AngularCore.Server/             # ASP.NET Core server-side application folder.
-│   ├── JSopX.AngularCore.Server.csproj   # Angular CLI Visual Studio Server Project configuration file.
-
-```
-
-There are a few reasons why I do this, but the primary reason is ensuring references are managed effectively and circular dependencies are avoided.
-
-[`Back to Top`](#table-of-contents)
-
----
-
-### **Step: 5.2: Structured File Tree**:
-
-A common, plain-text file structure of the `JSopX.AngularCore` Project files and directories that matter.
-
-```plaintext
-# JSopX™ Angular Core Project
-
-JSopX.AngularCore/                        # Root JSopX.AngularCore Visual Studio Solution folder.
-├── .gitattributes                        # Git attributes file for repository metadata and configurations.
-├── .gitignore                            # Specifies files and directories to ignore in version control.
-├── JSopX.AngularCore.sln                 # Visual Studio solution file for Angular Core.
-├── LICENSE.txt                           # Licensing information for the project.
-├── PathConfig.targets                    # Centralized MSBuild target configuration for project references.
-├── README.md                             # High-level project documentation.
-├── jsopx.angularcore.client/             # Angular client-side application folder.
-│   ├── jsopx.angularcore.client.esproj   # Angular CLI Visual Studio Client Project configuration file.
-│   ├── angular.json                      # Angular CLI workspace configuration file.
-│   ├── package.json                      # NPM dependencies and project metadata.
-│   ├── src/                              # Main source directory for the Angular app.
-│   │   ├── app/                          # Core Angular modules, components, and routing.
-│   │   │   ├── app-routing.module.ts     # Defines route configurations for Angular components.
-│   │   │   ├── app.component.css         # Styles for the main application component.
-│   │   │   ├── app.component.html        # HTML template for the main application component.
-│   │   │   ├── app.component.spec.ts     # Unit test file for the main application component.
-│   │   │   ├── app.component.ts          # TypeScript logic for the main application component.
-│   │   │   ├── app.module.ts             # Root Angular module that declares components and imports dependencies.
-│   │   ├── index.html                    # Root HTML file to bootstrap the Angular app.
-│   │   ├── main.ts                       # Main entry point for Angular application.
-│   │   ├── proxy.conf.js                 # Configuration file for setting up API proxying in Angular.
-│   │   ├── styles.css                    # Global stylesheet for Angular application.
-├── JSopX.AngularCore.Server/             # ASP.NET Core server-side application folder.
-│   ├── JSopX.AngularCore.Server.csproj   # Angular CLI Visual Studio Server Project configuration file.
-│   ├── Program.cs                        # Main entry point for the ASP.NET Core server.
-│   ├── Controllers/                      # API controllers exposing server endpoints.
-│   ├── appsettings.json                  # Application settings file for configuration.
-│   └── WeatherForecast.cs                # Example Weather Forecast model class (default template).
-
-```
-
-[`Back to Top`](#table-of-contents)
-
----
-
-### **Step: 5.3: Structured Table**:
-
-A table structure of the same with no tree legs `JSopX.AngularCore` Project, files and resources.
-
-
-| **File/Directory**                        | **Description**                                                                                   |
-|:------------------------------------------|:--------------------------------------------------------------------------------------------------|
-| &nbsp;📁&nbsp;**JSopX.AngularCore/**&nbsp;                | Parent `JSopX.AngularCore` Visual Studio Solution folder, containing both client and server code.|
-| &nbsp;├&nbsp;📝&nbsp;`.gitattributes`&nbsp;                   | Git attributes file for repository metadata and configurations. |
-| &nbsp;├&nbsp;📝&nbsp;`.gitignore `&nbsp;                      | Specifies files and directories to ignore in version control. |
-| &nbsp;├&nbsp;📝&nbsp;`JSopX.AngularCore.sln`&nbsp;            | Visual Studio `.sln` solution file linking the client and server projects. |
-| &nbsp;├&nbsp;📝&nbsp;`LICENSE.txt`&nbsp;                      | Licensing information for the project (generally `MIT` open-source license). |
-| &nbsp;├&nbsp;📝&nbsp;`PathConfig.targets`&nbsp;               | Centralized MSBuild target configuration for project references, used in conjunction with Git Sub Trees, to retain all files and references, while dynamically resetting reference paths if necessary. |
-| &nbsp;├&nbsp;📝&nbsp;`README.md`&nbsp;                      | The current, most recent, primary project README `.md` file. |
-| &nbsp;├&nbsp;📁&nbsp;**jsopx.angularcore.client**&nbsp;         | Angular client-side application folder, housing the front-end implementation. |
-| &nbsp;&nbsp;&nbsp;&nbsp;├&nbsp;📝&nbsp;`jsopx.angularcore.client.esproj`&nbsp;     | Angular client-side Visual Studio project `.esproj` configuration file. |
-| &nbsp;&nbsp;&nbsp;&nbsp;├&nbsp;📝&nbsp;`angular.json`&nbsp;                     | Angular CLI configuration file for workspace and project settings. |
-| &nbsp;&nbsp;&nbsp;&nbsp;├&nbsp;📝&nbsp;`package.json`&nbsp;                     | NPM metadata file listing project dependencies and scripts. |
-| &nbsp;&nbsp;&nbsp;&nbsp;├&nbsp;📁&nbsp;**`src/`**&nbsp;                               | Main source directory for Angular, containing app components and assets. |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├&nbsp;📁&nbsp;**`app/`**&nbsp;                             | Core Angular modules, components, and routing configurations. |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├&nbsp;📝&nbsp;`app-routing.module.ts`&nbsp;          | Defines route configurations for Angular components. |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├&nbsp;📝&nbsp;`app.component.css`&nbsp;              | Styles for the main application component. |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├&nbsp;📝&nbsp;`app.component.html`&nbsp;             | HTML template for the main application component. |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├&nbsp;📝&nbsp;`app.component.spec.ts`&nbsp;          | Unit test file for the main application component. |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├&nbsp;📝&nbsp;`app.component.ts`&nbsp;               | TypeScript logic for the main application component. |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├&nbsp;📝&nbsp;`app.module.ts`&nbsp;                  | Root Angular module that declares components and imports dependencies. |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├&nbsp;📝&nbsp;`index.html`&nbsp;                     | Root HTML file that bootstraps the Angular application. |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├&nbsp;📝&nbsp;`main.ts`&nbsp;                        | Entry point file where Angular initializes and bootstraps the application. |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├&nbsp;📝&nbsp;`proxy.conf.js`&nbsp;                  | Configuration file for setting up API proxying in Angular. |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├&nbsp;📝&nbsp;`styles.css`&nbsp;                     | Global stylesheet for Angular application. |
-| &nbsp;├&nbsp;📁&nbsp;**JSopX.AngularCore.Server**&nbsp;         | ASP.NET Core server-side folder for back-end logic and API endpoints. |
-| &nbsp;&nbsp;&nbsp;&nbsp;├&nbsp;📝&nbsp;`JSopX.AngularCore.Server.csproj`&nbsp;     | Angular server-side Visual Studio project `.csproj` configuration file. |
-| &nbsp;&nbsp;&nbsp;&nbsp;├&nbsp;📝&nbsp;`Program.cs`&nbsp;                       | Main entry point for the ASP.NET Core application, initializing services. |
-| &nbsp;&nbsp;&nbsp;&nbsp;├&nbsp;📁&nbsp;**`Controllers/`**&nbsp;                     | Contains API controllers that handle HTTP requests and responses. |
-| &nbsp;&nbsp;&nbsp;&nbsp;├&nbsp;📝&nbsp;`appsettings.json`&nbsp;                 | Configuration file for application settings like connection strings. |
-| &nbsp;&nbsp;&nbsp;&nbsp;├&nbsp;📝&nbsp;`WeatherForecast.cs`&nbsp;               | Example Weather Forecast model class provided by ASP.NET Core templates for demonstration. |
-
-
-[`Back to Top`](#table-of-contents)
-
----
-
-## **Step 6: JSopX™ Project References & Dependencies**
-
-> [!TIP]
->
-> The `JSopX.AngularCore` Project should already have the JSopX™ Project References & Dependencies described below included!
-> 
-
----
-
-Most `JSopX™ Projects` leverage shared resources and code from other projects within the JSopX™ ecosystem. This ensures modularity, maintainability, and scalability.
-
-The `JSopX.AngularCore` Project has the following `JSopX` Project Dependencies:
-
-1. **`JSopX.BridgeTooFar`**:
-   - A [Shared Assets & Resources Projects](https://github.com/JasonSilvestri/JSopX.BridgeTooFar/tree/master/JSopX.BridgeTooFar/DocsOpenX/../Introduction/JSopxProjectsFamilies.md#2-shared-assets--resources-projects) that contains reusable static assets and project documentation.
-   - **Explore GitHub**: [JSopX.BridgeTooFar](https://github.com/JasonSilvestri/JSopX.BridgeTooFar/tree/master/JSopX.BridgeTooFar/DocsOpenX/OpenProjects/jsopx.BridgeTooFar)
-
-2. **`JSopX.ClassLibrary`**:
-   - A [Shared Data, Service & Function Project](https://github.com/JasonSilvestri/JSopX.BridgeTooFar/tree/master/JSopX.BridgeTooFar/DocsOpenX/../Introduction/JSopxProjectsFamilies.md#3-shared-data-service--function-projects) that houses shared business logic and helper methods.
-   - **Explore GitHub**: [JSopX.ClassLibrary](https://github.com/JasonSilvestri/JSopX.BridgeTooFar/tree/master/JSopX.BridgeTooFar/DocsOpenX/OpenProjects/jsopx.ClassLibrary)
-
-3. **`JSopX.WebAPI`**:
-   - A [Shared Data, Service & Function Project](https://github.com/JasonSilvestri/JSopX.BridgeTooFar/tree/master/JSopX.BridgeTooFar/DocsOpenX/../Introduction/JSopxProjectsFamilies.md#3-shared-data-service--function-projects) which acts as the centrialized **Web API**, used by all projects that access data endpoints in the application.
-   - **Explore GitHub**: [JSopX.WebAPI](https://github.com/JasonSilvestri/JSopX.BridgeTooFar/tree/master/JSopX.BridgeTooFar/DocsOpenX/OpenProjects/jsopx.WebAPI)
- 
-4. **`JSopX.RCLxProper`**:
-   - An extremely light-weight, [Shared Assets & Resources Projects](https://github.com/JasonSilvestri/JSopX.BridgeTooFar/tree/master/JSopX.BridgeTooFar/DocsOpenX/../Introduction/JSopxProjectsFamilies.md#2-shared-assets--resources-projects) version of the `JSopX.Assets` Razor Class Library, specifically designed for Production-Ready environments.
-   - **Explore GitHub**: [JSopX.RCLxProper](https://github.com/JasonSilvestri/JSopX.BridgeTooFar/tree/master/JSopX.BridgeTooFar/DocsOpenX/OpenProjects/jsopx.RCLxProper)
-
-
-[`Back to Top`](#table-of-contents)
-
----
-
-## **Step 7: Usage**
-
-Although the `JSopX.AngularCore` project is primarily designed as a self-contained demonstration project, it is fully capable of integration with other JSopX™ projects. Here's how to add it to your project:
-
----
-
-### **Step 7.1: Adding the JSopX™ Angular Core to Other Projects**
-
-1. **Add Project Reference**:
-   - Open your solution in Visual Studio.
-   - Right-click the project that will use `JSopX.AngularCore` and select `Add > Project Reference`.
-   - Check the box for `JSopX.AngularCore` and click `OK`.
-
-[`Back to Top`](#table-of-contents)
-
----
-
-## **Step 8: Extended Usage**
-
-> [!TIP]
-> These particular `Extended Usage` examples **are not** required to implement. They are just example extended usages for those of whom are new to projects like the `JSopX.AngularCore` Project.
->
-
----
-
-## **Step 8:1. Extend Angular Client Project**
-
-1. Modify the `proxy.conf.js` file to configure the API URL.
-2. Use Angular services to consume APIs exposed by the server project.
-
-   **Example service file in `Angular`**:
-   ```typescript
-   import { HttpClient } from '@angular/common/http';
-   import { Injectable } from '@angular/core';
-
-   @Injectable({
-     providedIn: 'root',
-   })
-   export class ExampleService {
-     private apiUrl = 'https://localhost:5001/api/example';
-
-     constructor(private http: HttpClient) {}
-
-     getExampleData() {
-       return this.http.get(`${this.apiUrl}`);
+## **Step 1: Recreate `JSopX.ReactCore` Using React & ASP.NET Core Template**
+
+
+**Goal**: Simulate an existing React app with weather data, Identity, and JWT already established.
+
+1. **Open Visual Studio 2022 (v 17.13.6)**:
+   - Ensure .NET 9.0 SDK, Node 20.14.0, and npm 10.8.1 are installed (React 18.2.0 comes with template).
+
+2. **Create the Project**:
+   - File > New > Project.
+   - Search for “ASP.NET Core with React”.
+   - Configure:
+     - Project Name: `JSopX.ReactCore`.
+     - Location: e.g., `path\to\local\repo\JasonSilvestri\JSopX.ReactCore`.
+     - Solution Name: `JSopX.ReactCore`.
+     - .NET Framework (v 9.0.1)
+   - Click Create.
+
+3. **Set Up Initial Weather Data**:
+   - In `JSopX.ReactCore/jsopx.reactcore.client/src/components/FetchData.js`:
+
+     ```javascript
+     import React, { useEffect, useState } from 'react';
+     export const FetchData = () => {
+       const [forecasts, setForecasts] = useState([]);
+       useEffect(() => {
+         fetch('weatherforecast')
+           .then(response => response.json())
+           .then(data => setForecasts(data));
+       }, []);
+       return (
+         <div>
+           <h1>JSopX™ Weather</h1>
+           <table>
+             <thead><tr><th>Date</th><th>Temp (°C)</th><th>Summary</th></tr></thead>
+             <tbody>
+               {forecasts.map(forecast => (
+                 <tr key={forecast.date}>
+                   <td>{new Date(forecast.date).toLocaleDateString()}</td>
+                   <td>{forecast.temperatureC}</td>
+                   <td>{forecast.summary}</td>
+                 </tr>
+               ))}
+             </tbody>
+           </table>
+         </div>
+       );
+     };
+     ```
+   - Keep `JSopX.ReactCore/JSopX.ReactCore.Server/Controllers/WeatherForecastController.cs` as default.
+
+4. **Add Identity + JWT (Simulating Existing Setup)**:
+   - Install NuGet: `Microsoft.AspNetCore.Authentication.JwtBearer`.
+   - Update `Program.cs`:
+
+     ```csharp
+     builder.Services.AddAuthentication()
+         .AddJwtBearer(options =>
+         {
+             options.TokenValidationParameters = new TokenValidationParameters
+             {
+                 ValidateIssuer = true,
+                 ValidateAudience = true,
+                 ValidateLifetime = true,
+                 ValidateIssuerSigningKey = true,
+                 ValidIssuer = builder.Configuration["Jwt:Issuer"],
+                 ValidAudience = builder.Configuration["Jwt:Audience"],
+                 IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]))
+             };
+         });
+     builder.Services.AddSpaStaticFiles(configuration => configuration.RootPath = "JSopX.ReactCore/jsopx.reactcore.client/build");
+     var app = builder.Build();
+     app.UseAuthentication();
+     app.UseAuthorization();
+     app.UseSpa(spa => spa.Options.SourcePath = "ClientApp");
+     ```
+   - Update `appsettings.json`:
+
+     ```json
+     {
+       "Jwt": { "Key": "8f+2Kj9mPqL5xRtYvWnZcQwXjB3sM7hD9pN8uG4tA1o=", "Issuer": "JSopX", "Audience": "JSopX" }
      }
-   }
-   ```
- 
+     ```
+   - Add `JSopX.ReactCore/JSopX.ReactCore.Server/Controllers/AuthController.cs`:
+
+     ```csharp
+     [Route("api/[controller]")]
+     [ApiController]
+     public class AuthController : ControllerBase
+     {
+         private readonly IConfiguration _config;
+         public AuthController(IConfiguration config) => _config = config;
+         [HttpPost("login")]
+         public IActionResult Login([FromBody] LoginModel model)
+         {
+             if (model.Username == "test" && model.Password == "password") // Dummy check
+             {
+                 var token = GenerateJwtToken(model.Username);
+                 return Ok(new { token });
+             }
+             return Unauthorized();
+         }
+         private string GenerateJwtToken(string username)
+         {
+             var claims = new[] { new Claim(ClaimTypes.Name, username) };
+             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config["Jwt:Key"]));
+             var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
+             var token = new JwtSecurityToken(_config["Jwt:Issuer"], _config["Jwt:Audience"], claims, expires: DateTime.Now.AddMinutes(30), signingCredentials: creds);
+             return new JwtSecurityTokenHandler().WriteToken(token);
+         }
+     }
+     public class LoginModel { public string Username { get; set; } public string Password { get; set; } }
+     ```
+   - Add `JSopX.ReactCore/jsopx.reactcore.client/src/components/Login.js`:
+
+     ```javascript
+     import React, { useState } from 'react';
+     export const Login = () => {
+       const [username, setUsername] = useState('');
+       const [password, setPassword] = useState('');
+       const [message, setMessage] = useState('');
+       const login = () => {
+         fetch('/api/auth/login', {
+           method: 'POST',
+           headers: { 'Content-Type': 'application/json' },
+           body: JSON.stringify({ username, password })
+         })
+           .then(response => response.json())
+           .then(data => {
+             localStorage.setItem('jwt', data.token);
+             setMessage('Logged in!');
+           })
+           .catch(() => setMessage('Login failed'));
+       };
+       return (
+         <div>
+           <input value={username} onChange={e => setUsername(e.target.value)} placeholder="Username" />
+           <input type="password" value={password} onChange={e => setPassword(e.target.value)} placeholder="Password" />
+           <button onClick={login}>Login</button>
+           <p>{message}</p>
+         </div>
+       );
+     };
+     ```
+   - Update `JSopX.ReactCore/jsopx.reactcore.client/src/App.js`:
+
+     ```javascript
+     import { Login } from './components/Login';
+     const App = () => (
+       <Router>
+         <Routes>
+           <Route path="/" element={<Home />} />
+           <Route path="/fetch-data" element={<FetchData />} />
+           <Route path="/login" element={<Login />} />
+         </Routes>
+       </Router>
+     );
+     ```
+
+5. **Test the Base Setup**:
+   - Run `npm install` in `JSopX.ReactCore/jsopx.reactcore.client/`.
+   - Start the app (`F5`).
+   - Go to `/login`, use `test/password`, then `/fetch-data`.
+
+
 [`Back to Top`](#table-of-contents)
 
 ---
 
-### **Step 8:2. ASP.NET Core Server Project**
+## Step 2: Extend Weather Data
 
-1. Add dependency injection for shared services in `Program.cs`:
+**Goal**: Add historical weather data.
 
-   ```csharp
-   builder.Services.AddScoped<ExampleService>();
-   ```
+1. **Update Weather Model**:
+   - In `FetchData.js`, expect `historicalTempC`:
 
-2. Create or modify controllers to expose endpoints:
+     ```javascript
+     // Implicit in the fetch response
+     ```
 
-   ```csharp
-   [ApiController]
-   [Route("api/[controller]")]
-   public class ExampleController : ControllerBase {
-       private readonly ExampleService _service;
+2. **Update Weather Controller**:
+   - In `WeatherForecastController.cs`:
 
-       public ExampleController(ExampleService service) {
-           _service = service;
-       }
+     ```csharp
+     [Authorize]
+     [HttpGet]
+     public IEnumerable<WeatherForecast> Get()
+     {
+         return Enumerable.Range(1, 5).Select(index => new WeatherForecast
+         {
+             Date = DateTime.Now.AddDays(index),
+             TemperatureC = Random.Shared.Next(-20, 55),
+             Summary = Summaries[Random.Shared.Next(Summaries.Length)],
+             HistoricalTempC = Random.Shared.Next(-25, 50)
+         });
+     }
+     ```
 
-       [HttpGet]
-       public IActionResult GetExample() {
-           var data = _service.GetExampleData();
-           return Ok(data);
-       }
-   }
-   ```
+3. **Update Fetch Data Component**:
+   - In `FetchData.js`:
+
+     ```javascript
+     <thead><tr><th>Date</th><th>Temp (°C)</th><th>Historical Temp (°C)</th><th>Summary</th></tr></thead>
+     <td>{forecast.historicalTempC}</td>
+     ```
+
+4. **Test**: Reload `/fetch-data` and verify historical data.
+
+
+[`Back to Top`](#table-of-contents)
+
+---
+
+## Step 3: Integrate OIDC
+
+**Goal**: Use OIDC via `JSopX.AspNetCore`’s IdentityServer.
+
+1. **Install React OIDC Client**:
+   - In `JSopX.ReactCore/jsopx.reactcore.client/`: `npm install oidc-client-ts`.
+
+2. **Configure OIDC**:
+   - Add `JSopX.ReactCore/jsopx.reactcore.client/src/auth.js`:
+
+     ```javascript
+     import { UserManager } from 'oidc-client-ts';
+     export const userManager = new UserManager({
+       authority: 'https://localhost:7235',
+       client_id: 'react',
+       redirect_uri: window.location.origin + '/callback',
+       scope: 'openid profile api',
+       response_type: 'code',
+       silentRenew: true
+     });
+     ```
+   - Add `JSopX.ReactCore/jsopx.reactcore.client/src/components/Callback.js`:
+
+     ```javascript
+     import { useEffect } from 'react';
+     import { userManager } from '../auth';
+     export const Callback = () => {
+       useEffect(() => { userManager.signinRedirectCallback().then(() => window.location = '/'); }, []);
+       return <div>Logging in...</div>;
+     };
+     ```
+   - Update `App.js`:
+
+     ```javascript
+     import { userManager } from './auth';
+     import { Callback } from './components/Callback';
+     const App = () => {
+       useEffect(() => { userManager.getUser().then(user => console.log(user)); }, []);
+       return (
+         <Router>
+           <Routes>
+             <Route path="/callback" element={<Callback />} />
+             ...
+           </Routes>
+         </Router>
+       );
+     };
+     ```
+
+3. **Secure API Calls**:
+   - In `FetchData.js`:
+
+     ```javascript
+     useEffect(() => {
+       userManager.getUser().then(user => {
+         fetch('weatherforecast', {
+           headers: { 'Authorization': `Bearer ${user.access_token}` }
+         })
+           .then(response => response.json())
+           .then(data => setForecasts(data));
+       });
+     }, []);
+     ```
+
+4. **Test**: Add `react` client to `Config.cs` in `JSopX.AspNetCore`, log in, verify `/fetch-data`.
+
+
+[`Back to Top`](#table-of-contents)
+
+---
+
+## Step 4: Decouple from Built-In API
+
+**Goal**: Use `JSopX.WebAPI`.
+
+1. **Update Fetch Data**:
+   - In `FetchData.js`:
+
+     ```javascript
+     fetch('https://localhost:7234/api/weather', { headers: { 'Authorization': `Bearer ${user.access_token}` } })
+     ```
+
+2. **Test**: Ensure data comes from `JSopX.WebAPI`.
+
+
+[`Back to Top`](#table-of-contents)
+
+---
+
+## Step 5: Standardize with RCLs and Libraries
+
+1. **Reference JSopX.RCLxProper**:
+   - Mimic style in `FetchData.css`:
+
+     ```css
+     table { border-collapse: collapse; }
+     th, td { border: 1px solid #ddd; padding: 8px; }
+     ```
+
+2. **Reference JSopX.SharedResources**:
+   - Add `JSopX.ReactCore/jsopx.reactcore.client/src/weatherUtils.js`:
+
+     ```javascript
+     export const getWeatherIcon = summary => summary === 'Cool' ? '❄️' : summary === 'Warm' ? '☀️' : '🔥';
+     ```
+   - Use in `FetchData.js`:
+
+     ```javascript
+     import { getWeatherIcon } from '../weatherUtils';
+     <td>{getWeatherIcon(forecast.summary)}</td>
+     ```
+
+3. **Test**: Verify icons appear.
 
 [`Back to Top`](#table-of-contents)
 
@@ -487,17 +513,17 @@ Carefully choose the approach below that fits your current objective:
 
 ---
 
-1. **[Continue](https://github.com/JasonSilvestri/JSopX.BridgeTooFar/tree/master/JSopX.BridgeTooFar/DocsOpenX/OpenProjects/jsopx.ReactCore/README.md)** → _Continue_ as **you were**, exploring and/or installing other projects like you did with **this project**. You'll move onto the next project, using the `JSopX.ReactCore` _Using Latest_ Variant.  
+1. **[Continue](https://github.com/JasonSilvestri/JSopX.BridgeTooFar/tree/master/JSopX.BridgeTooFar/DocsOpenX/OpenProjects/jsopx.VueCore/p1/v1/RECREATEME.md)** → **Continue** as **you were**, **creating projects** from scratch, step-by-step. You'll move onto the next project, using the `JSopX.VueCore` _From Scratch_ Variant.   
 
 ---
 
-1. **[Browse By-Phase](https://github.com/JasonSilvestri/JSopX.BridgeTooFar/tree/master/JSopX.BridgeTooFar/DocsOpenX/OpenProjects/jsopx.AngularCore/p1/v1/README.md)** → **Browse** **previous versions** of the application by **phases** using the `JSopX.AngularCore` _By-Phase_ Variant.   
-2. **[Start From Scratch](https://github.com/JasonSilvestri/JSopX.BridgeTooFar/tree/master/JSopX.BridgeTooFar/DocsOpenX/OpenProjects/jsopx.AngularCore/p1/v1/RECREATEME.md)** → **Create project** from scratch, step-by-step, using the `JSopX.AngularCore` _From Scratch_ Variant.
-3. **[Get All Projects](https://github.com/JasonSilvestri/JSopX.BridgeTooFar/tree/master/JSopX.BridgeTooFar/DocsOpenX/OpenProjects/jsopx.OpenProjectX/README.md)** → **Get all projects** instead, using the `JSopX.OpenProjectX` Enterprise Application.
+- [Install Using Latest](https://github.com/JasonSilvestri/JSopX.BridgeTooFar/tree/master/JSopX.BridgeTooFar/DocsOpenX/OpenProjects/jsopx.ReactCore/README.md): **Install** or **explore** the latest version of **this project**, using the `JSopX.ReactCore` _Using Latest_ Variant.  
+- [Browse By-Phase](https://github.com/JasonSilvestri/JSopX.BridgeTooFar/tree/master/JSopX.BridgeTooFar/DocsOpenX/OpenProjects/jsopx.ReactCore/p1/v1/README.md): **Browse** **previous versions** of the application by **phases** using the `JSopX.ReactCore` _By-Phase_ Variant.   
+- [Get All Projects](https://github.com/JasonSilvestri/JSopX.BridgeTooFar/tree/master/JSopX.BridgeTooFar/DocsOpenX/OpenProjects/jsopx.OpenProjectX/README.md): **Get all projects** instead, using the `JSopX.OpenProjectX` Enterprise Application.
 
 ---
 
-[`Home`](https://github.com/JasonSilvestri/JSopX.BridgeTooFar/tree/master/JSopX.BridgeTooFar/DocsOpenX/OpenProjects/jsopx.AngularCore/README.md) » [`Introduction`](https://github.com/JasonSilvestri/JSopX.BridgeTooFar/tree/master/JSopX.BridgeTooFar/DocsOpenX/Introduction/) » [`Projects`](https://github.com/JasonSilvestri/JSopX.BridgeTooFar/tree/master/JSopX.BridgeTooFar/DocsOpenX/OpenProjects/) · · **`Use Latest`** · [`By-Phase`](https://github.com/JasonSilvestri/JSopX.BridgeTooFar/tree/master/JSopX.BridgeTooFar/DocsOpenX/OpenProjects/jsopx.AngularCore/p1/v1/README.md) · [`From Scratch`](https://github.com/JasonSilvestri/JSopX.BridgeTooFar/tree/master/JSopX.BridgeTooFar/DocsOpenX/OpenProjects/jsopx.AngularCore/p1/v1/RECREATEME.md) · · [`Back to Top`](#table-of-contents) · [`« Previous`](https://github.com/JasonSilvestri/JSopX.BridgeTooFar/tree/master/JSopX.BridgeTooFar/DocsOpenX/OpenProjects/jsopx.AspNetCore/) [`Next »`](https://github.com/JasonSilvestri/JSopX.BridgeTooFar/tree/master/JSopX.BridgeTooFar/DocsOpenX/OpenProjects/jsopx.ReactCore/)
+[`Home`](https://github.com/JasonSilvestri/JSopX.BridgeTooFar/tree/master/JSopX.BridgeTooFar/DocsOpenX/OpenProjects/jsopx.ReactCore/p1/v1/README.md) » [`Introduction`](https://github.com/JasonSilvestri/JSopX.BridgeTooFar/tree/master/JSopX.BridgeTooFar/DocsOpenX/Introduction/) » [`Projects`](https://github.com/JasonSilvestri/JSopX.BridgeTooFar/tree/master/JSopX.BridgeTooFar/DocsOpenX/OpenProjects/jsopx.ReactCore/p1/v1/OpenProjects/) · · [`Use Latest`](https://github.com/JasonSilvestri/JSopX.BridgeTooFar/tree/master/JSopX.BridgeTooFar/DocsOpenX/OpenProjects/jsopx.ReactCore/README.md) · [`By-Phase`](https://github.com/JasonSilvestri/JSopX.BridgeTooFar/tree/master/JSopX.BridgeTooFar/DocsOpenX/OpenProjects/jsopx.ReactCore/p1/v1/README.md) · **`From Scratch`** · · [`Back to Top`](#table-of-contents) · [`« Previous`](https://github.com/JasonSilvestri/JSopX.BridgeTooFar/tree/master/JSopX.BridgeTooFar/DocsOpenX/OpenProjects/jsopx.AngularCore/p1/v1/RECREATEME.md) [`Next »`](https://github.com/JasonSilvestri/JSopX.BridgeTooFar/tree/master/JSopX.BridgeTooFar/DocsOpenX/OpenProjects/jsopx.VueCore/p1/v1/RECREATEME.md)
 
 ---
 

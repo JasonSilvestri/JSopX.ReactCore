@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35919.96 d17.13
+VisualStudioVersion = 17.13.35919.96
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "jsopx.reactcore.client", "jsopx.reactcore.client\jsopx.reactcore.client.esproj", "{769C1C84-CE95-51F7-5F80-C40AA5433249}"
 EndProject
@@ -10,6 +10,14 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JSopX.ReactCore.AppHost", "JSopX.ReactCore.AppHost\JSopX.ReactCore.AppHost.csproj", "{C49E147D-A9D6-43BA-9882-62CE04CF5CD2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JSopX.ReactCore.ServiceDefaults", "JSopX.ReactCore.ServiceDefaults\JSopX.ReactCore.ServiceDefaults.csproj", "{6E3E2509-5DED-82D1-24F6-7E0F0562DB0A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}"
+	ProjectSection(SolutionItems) = preProject
+		LICENSE.txt = LICENSE.txt
+		PathConfig.targets = PathConfig.targets
+		README.md = README.md
+		RECREATEME.md = RECREATEME.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
